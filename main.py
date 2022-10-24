@@ -99,15 +99,57 @@
 # for w in words:
 #     print(w, len(w))
 
-users = {'Lindsay': 'active', 'Amy': 'inactive', 'Molly': 'active'}
-for user, status in users.copy().items():
-    print(users)
-    if status == 'inactive':
-        del users[user]   
-        print(users)
-active_users = {}
-for user, status in users.items():
-    if status == 'active':
-        active_users[user] = status
-        print(users)
+# users = {'Lindsay': 'active', 'Amy': 'inactive', 'Molly': 'active'}
+# for user, status in users.copy().items():
+#     print(users)
+#     if status == 'inactive':
+#         del users[user]   
+#         print(users)
+# active_users = {}
+# for user, status in users.items():
+#     if status == 'active':
+#         active_users[user] = status
+#         print(active_users)
+
+# def fib(n):
+#     a, b = 0, 1
+#     while a < n:
+#         print(a, end=' ')
+#         a, b = b, a+b
+#     print()
         
+# >>> def fib(n):
+# ...     a, b =0, 1
+# ...     while a < n:
+# ...             print(a, end=' ')
+# ...             a, b = b, a+b
+# ...     print()
+# ... 
+# >>> fib(2000)
+# 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 
+# >>> def fib2(n):
+# ...     result = []
+# ...     a, b = 0, 1
+# ...     while a < n:
+# ...             result.append(a)
+# ...             a, b = b, a+b
+# ...     return result
+# ... 
+# >>> f100 = fib2(100)
+# >>> f100
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]     
+
+# def ask_ok(prompt, retries=4, reminder='Please try again!'):
+#     while True:
+#         ok = input(prompt)
+#         if ok in ('y', 'ye', 'yes'):
+#             return True
+#         if ok in ('n', 'no', 'nop', 'nope'):
+#             return False
+#         retries = retries - 1
+#         if retries < 0:
+#             raise ValueError('invalid user response')
+#         print(reminder)
+#         ask_ok('Do you really want to quit?')
+        
+stopped at 4.8.2 Keyword arguments
