@@ -62,12 +62,52 @@
 # names = ["Lindsay", "Amy", "Molly"]
 # print(names[0:2])
 
-numbers = [1, 2, 3, 4, 5]
-for item in numbers:
-    print(item)
+# numbers = [1, 2, 3, 4, 5]
+# for item in numbers:
+#     print(item)
 
-i = 0
-while i < len(numbers):
-    print(numbers[i])
-    i = i + 1
+# i = 0
+# while i < len(numbers):
+#     print(numbers[i])
+#     i = i + 1
 
+# class Car:
+#     def __init__(self, input_model):
+#         self.model = input_model
+#         self.mileage = 0
+
+#     def vroooooom(self, distance):
+#         self.mileage += distance
+
+#     def __str__(self):
+#         return f"Hello, I am a {self.model} and I have travelled {self.mileage} miles"
+
+# my_car = Car('Honda')
+# print(my_car.model)
+# print(my_car.mileage)
+# my_car.vroooooom(1234)
+# print(my_car.mileage)
+# print(my_car)
+
+#initial sub-sequence of the Fionacci series
+# a, b = 0, 1
+# while a < 1000:
+#     print(a, end=',')
+#     a, b = b, a+b
+
+# words = ['cat', 'window', 'defenestrate']
+# for w in words:
+#     print(w, len(w))
+
+users = {'Lindsay': 'active', 'Amy': 'inactive', 'Molly': 'active'}
+for user, status in users.copy().items():
+    print(users)
+    if status == 'inactive':
+        del users[user]   
+        print(users)
+active_users = {}
+for user, status in users.items():
+    if status == 'active':
+        active_users[user] = status
+        print(users)
+        
